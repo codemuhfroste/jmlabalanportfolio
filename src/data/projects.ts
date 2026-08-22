@@ -6,6 +6,7 @@ export interface Project {
   year: string;
   link: string;
   repo: string;
+  category: "major" | "minor";
   featured?: boolean;
 }
 
@@ -21,36 +22,29 @@ export const projects: Project[] = [
     year: "2026",
     link: "#",
     repo: "#",
+    category: "major",
     featured: true,
   },
   {
     index: "02",
-    title: "Project Title Two",
+    title: "Busay Garden",
     description:
-      "A short one or two sentence summary of what this project does, the problem it solves, and your role in building it.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL"],
-    year: "2025",
-    link: "#",
+      "A website for a hydroponic farm in Daraga, Albay, growing fresh lettuce and arugula using soil-free growing methods.",
+    tags: ["Next.js", "Web App"],
+    year: "2026",
+    link: "https://busaygarden.vercel.app",
     repo: "#",
+    category: "minor",
   },
   {
     index: "03",
-    title: "Project Title Three",
+    title: "Console Central PH",
     description:
-      "A short one or two sentence summary of what this project does, the problem it solves, and your role in building it.",
-    tags: ["Java", "Android", "Firebase"],
-    year: "2025",
-    link: "#",
+      "A Philippines-based site for gaming console sales, rentals, or services.",
+    tags: ["Next.js", "Web App"],
+    year: "2026",
+    link: "https://consolecentralph.vercel.app",
     repo: "#",
-  },
-  {
-    index: "04",
-    title: "Project Title Four",
-    description:
-      "A short one or two sentence summary of what this project does, the problem it solves, and your role in building it.",
-    tags: ["Python", "Flask", "MySQL"],
-    year: "2024",
-    link: "#",
-    repo: "#",
+    category: "minor",
   },
 ];

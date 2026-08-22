@@ -10,17 +10,15 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-5xl scroll-mt-24 border-t border-rule px-6 py-20 sm:px-10 sm:py-28"
+      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-10 sm:px-10"
     >
-      <div className="grid gap-12 sm:grid-cols-[1fr_2fr]">
-        <div>
-          <p className="inline-flex items-center gap-2 font-mono text-sm tracking-widest text-accent uppercase">
-            <Leaf className="h-4 w-4" />
-            04 / Contact
-          </p>
-        </div>
-        <div className="flex flex-col gap-8">
-          <p className="font-display text-3xl leading-snug text-ink sm:text-4xl">
+      <div className="rounded-3xl border border-rule bg-paper-alt p-8 sm:p-12">
+        <p className="inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
+          <Leaf className="h-3.5 w-3.5" />
+          06 / Contact
+        </p>
+        <div className="mt-8 flex flex-col gap-8">
+          <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
             Let&apos;s work together, or just say hello.
           </p>
           <p className="max-w-xl text-lg leading-relaxed text-ink-soft">
@@ -34,10 +32,10 @@ export default function Contact() {
               <a
                 key={social.label}
                 href={social.href}
-                className="group flex items-center justify-between border-b border-rule py-3 text-ink transition-colors hover:text-accent"
+                className="group flex items-center justify-between rounded-xl px-3 py-3 text-ink transition-colors hover:bg-accent/5 hover:text-accent"
               >
                 <span className="text-sm text-ink-soft">{social.label}</span>
-                <span className="font-display text-lg">
+                <span className="font-display text-lg font-medium">
                   {social.value}
                 </span>
               </a>

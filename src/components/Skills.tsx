@@ -23,21 +23,19 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="mx-auto max-w-5xl scroll-mt-24 border-t border-rule px-6 py-20 sm:px-10 sm:py-28"
+      className="mx-auto max-w-5xl scroll-mt-24 px-6 py-10 sm:px-10"
     >
-      <div className="grid gap-12 sm:grid-cols-[1fr_2fr]">
-        <div>
-          <p className="inline-flex items-center gap-2 font-mono text-sm tracking-widest text-accent uppercase">
-            <Leaf className="h-4 w-4" />
-            02 / Skills
-          </p>
-        </div>
-        <div className="flex flex-col gap-10">
-          <p className="font-display text-3xl leading-snug text-ink sm:text-4xl">
+      <div className="rounded-3xl border border-rule bg-paper-alt p-8 sm:p-12">
+        <p className="inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
+          <Leaf className="h-3.5 w-3.5" />
+          04 / Skills
+        </p>
+        <div className="mt-8 flex flex-col gap-10">
+          <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
             Tools and technologies I work with.
           </p>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-4">
             {groups.map((group) => (
               <div key={group.label}>
                 <h3 className="mb-4 text-sm font-medium text-ink-soft">
@@ -47,7 +45,7 @@ export default function Skills() {
                   {group.items.map((item) => (
                     <span
                       key={item}
-                      className="rounded-full border border-rule bg-paper-alt px-3.5 py-1.5 text-sm text-ink"
+                      className="rounded-lg bg-ink/[0.04] px-3.5 py-1.5 text-sm text-ink"
                     >
                       {item}
                     </span>
