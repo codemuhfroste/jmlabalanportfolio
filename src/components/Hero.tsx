@@ -8,18 +8,18 @@ export default function Hero() {
       className="mx-auto grid max-w-5xl gap-12 px-6 pt-16 pb-20 sm:grid-cols-[1fr_auto] sm:items-start sm:gap-16 sm:px-10 sm:pt-24 sm:pb-28"
     >
       <div className="flex flex-col gap-10">
-        <p className="inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
+        <p className="animate-[fade-up_0.6s_ease-out_both] inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
           <Leaf className="h-3.5 w-3.5" />
           Portfolio — Est. 2026
         </p>
 
-        <h1 className="font-display text-5xl leading-[1.05] font-semibold tracking-tight text-ink sm:text-7xl">
+        <h1 className="animate-[fade-up_0.6s_ease-out_0.1s_both] font-display text-5xl leading-[1.05] font-semibold tracking-tight text-ink sm:text-7xl">
           Jose Manuel G.
           <br />
           Labalan
         </h1>
 
-        <div className="grid gap-10 rounded-3xl border border-rule bg-paper-alt p-8 sm:grid-cols-[2fr_1fr]">
+        <div className="animate-[fade-up_0.6s_ease-out_0.2s_both] grid gap-10 rounded-3xl border border-rule bg-paper-alt p-8 sm:grid-cols-[2fr_1fr]">
           <p className="max-w-xl text-xl leading-relaxed text-ink-soft">
             I&apos;m an IT student who enjoys turning ideas into working
             software. Right now I&apos;m building{" "}
@@ -42,23 +42,23 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-2">
+        <div className="animate-[fade-up_0.6s_ease-out_0.3s_both] flex flex-wrap gap-4 pt-2">
           <a
             href="#work"
-            className="rounded-xl bg-accent px-6 py-3 text-sm font-medium text-white shadow-sm shadow-accent/30 transition-transform hover:-translate-y-0.5"
+            className="rounded-xl bg-accent px-6 py-3 text-sm font-medium text-white shadow-sm shadow-accent/30 transition-all hover:-translate-y-0.5 active:translate-y-0 active:scale-95"
           >
             View my work
           </a>
           <a
             href="#contact"
-            className="rounded-xl border border-rule bg-paper-alt px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-accent hover:text-accent"
+            className="rounded-xl border border-rule bg-paper-alt px-6 py-3 text-sm font-medium text-ink transition-all hover:border-accent hover:text-accent active:scale-95"
           >
             Get in touch
           </a>
         </div>
       </div>
 
-      <div className="relative order-first mx-auto w-48 shrink-0 overflow-hidden rounded-3xl ring-1 ring-rule sm:order-none sm:w-64">
+      <div className="animate-[fade-up_0.7s_ease-out_0.15s_both] relative order-first mx-auto w-48 shrink-0 overflow-hidden rounded-3xl ring-1 ring-rule sm:order-none sm:w-64">
         <Image
           src="/profile.jpg"
           alt="Jose Manuel G. Labalan"

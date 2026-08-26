@@ -4,7 +4,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <a
       href={project.link}
-      className="group grid grid-cols-[auto_1fr] gap-6 rounded-2xl border border-rule bg-paper p-6 transition-all hover:-translate-y-0.5 hover:border-accent/40 sm:grid-cols-[3rem_1fr_auto] sm:items-start"
+      className="group grid grid-cols-[auto_1fr] gap-6 rounded-2xl border border-rule bg-paper p-6 transition-all hover:-translate-y-0.5 hover:border-accent/40 active:translate-y-0 active:scale-[0.99] sm:grid-cols-[3rem_1fr_auto] sm:items-start"
     >
       <span className="font-mono text-sm text-ink-soft">
         {project.index}

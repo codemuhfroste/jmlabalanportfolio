@@ -1,4 +1,5 @@
 import Leaf from "@/components/icons/Leaf";
+import Reveal from "@/components/Reveal";
 
 const socials = [
   { label: "Email", value: "your.email@example.com", href: "mailto:your.email@example.com" },
@@ -12,7 +13,7 @@ export default function Contact() {
       id="contact"
       className="mx-auto max-w-5xl scroll-mt-24 px-6 py-10 sm:px-10"
     >
-      <div className="rounded-3xl border border-rule bg-paper-alt p-8 sm:p-12">
+      <Reveal className="rounded-3xl border border-rule bg-paper-alt p-8 sm:p-12">
         <p className="inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
           <Leaf className="h-3.5 w-3.5" />
           06 / Contact
@@ -42,7 +43,7 @@ export default function Contact() {
             ))}
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
