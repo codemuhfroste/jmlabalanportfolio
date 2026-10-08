@@ -5,7 +5,7 @@ const facts = [
   { label: "Program", value: "BS Information Technology" },
   { label: "Year Level", value: "4th Year" },
   { label: "University", value: "Bicol University" },
-  { label: "Currently", value: "Building minor systems and websites" },
+  { label: "Currently", value: "Seeking an OJT placement" },
 ];
 
 export default function About() {
@@ -21,14 +21,19 @@ export default function About() {
         </p>
         <div className="mt-8 flex flex-col gap-10">
           <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
-            A little about how I got here, what I&apos;m studying, and what
-            I&apos;m building toward.
+            I turn the problems real clients describe into working, deployed
+            software.
           </p>
           <p className="max-w-2xl text-lg leading-relaxed text-ink-soft">
-            This is placeholder bio text. Replace it with a short paragraph
-            about your background, how you got into IT, and what kind of
-            projects or problems you enjoy working on. Keep it conversational
-            and specific to you.
+            I&apos;m a fourth-year BS Information Technology student at Bicol
+            University, looking for an OJT placement in software and web
+            development. Most of what I&apos;ve built started as someone
+            else&apos;s problem — a store owner tracking credit in a notebook, a
+            club treasurer maintaining a spreadsheet nobody else could read. I
+            sit down with them, work out what the system actually has to do, then
+            build, test, and deploy it with AI-assisted development. What I want
+            next is to sharpen the hands-on coding side of that under
+            experienced developers.
           </p>
 
           <dl className="grid grid-cols-1 gap-6 border-t border-rule pt-8 sm:grid-cols-4">

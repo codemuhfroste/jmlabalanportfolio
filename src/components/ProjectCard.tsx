@@ -1,14 +1,12 @@
 import type { Project } from "@/data/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
-  return (
-    <a
-      href={project.link}
-      className="group grid grid-cols-[auto_1fr] gap-6 rounded-2xl border border-rule bg-paper p-6 transition-all hover:-translate-y-0.5 hover:border-accent/40 active:translate-y-0 active:scale-[0.99] sm:grid-cols-[3rem_1fr_auto] sm:items-start"
-    >
-      <span className="font-mono text-sm text-ink-soft">
-        {project.index}
-      </span>
+  const shell =
+    "group grid grid-cols-[auto_1fr] gap-6 rounded-2xl border border-rule bg-paper p-6 transition-all sm:grid-cols-[3rem_1fr_auto] sm:items-start";
+
+  const body = (
+    <>
+      <span className="font-mono text-sm text-ink-soft">{project.index}</span>
 
       <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
         <div className="flex aspect-[4/3] w-full shrink-0 items-center justify-center overflow-hidden rounded-xl border border-rule bg-black/30 sm:w-40">
@@ -25,6 +23,11 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.featured && (
               <span className="rounded-full bg-bloom/15 px-2.5 py-0.5 text-xs font-medium tracking-wide text-bloom uppercase">
                 Featured
+              </span>
+            )}
+            {project.status && (
+              <span className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium tracking-wide text-accent uppercase">
+                {project.status}
               </span>
             )}
           </div>
@@ -46,13 +49,36 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       <div className="col-span-2 flex items-center justify-between text-sm text-ink-soft sm:col-span-1 sm:flex-col sm:items-end sm:justify-start sm:gap-2">
         <span>{project.year}</span>
-        <span className="inline-flex items-center gap-1 text-ink transition-colors group-hover:text-accent">
-          View
-          <span aria-hidden className="transition-transform group-hover:translate-x-1">
-            →
+        {project.link ? (
+          <span className="inline-flex items-center gap-1 text-ink transition-colors group-hover:text-accent">
+            View
+            <span
+              aria-hidden
+              className="transition-transform group-hover:translate-x-1"
+            >
+              →
+            </span>
           </span>
-        </span>
+        ) : (
+          <span className="text-ink-soft/70">Client system</span>
+        )}
       </div>
+    </>
+  );
+
+  // Client systems aren't publicly hosted, so those cards aren't links.
+  if (!project.link) {
+    return <div className={shell}>{body}</div>;
+  }
+
+  return (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noreferrer"
+      className={`${shell} hover:-translate-y-0.5 hover:border-accent/40 active:translate-y-0 active:scale-[0.99]`}
+    >
+      {body}
     </a>
   );
 }

@@ -1,10 +1,17 @@
 import Leaf from "@/components/icons/Leaf";
 import Reveal from "@/components/Reveal";
 
-const socials = [
-  { label: "Email", value: "your.email@example.com", href: "mailto:your.email@example.com" },
-  { label: "GitHub", value: "github.com/yourusername", href: "#" },
-  { label: "LinkedIn", value: "linkedin.com/in/yourusername", href: "#" },
+const EMAIL = "jmgl2023-2701-73027@bicol-u.edu.ph";
+
+const socials: { label: string; value: string; href?: string }[] = [
+  { label: "Email", value: EMAIL, href: `mailto:${EMAIL}` },
+  { label: "Phone", value: "0992 304 8708", href: "tel:+639923048708" },
+  {
+    label: "GitHub",
+    value: "github.com/codemuhfroste",
+    href: "https://github.com/codemuhfroste",
+  },
+  { label: "Based in", value: "Legazpi City, Albay" },
 ];
 
 export default function Contact() {
@@ -20,27 +27,39 @@ export default function Contact() {
         </p>
         <div className="mt-8 flex flex-col gap-8">
           <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
-            Let&apos;s work together, or just say hello.
+            Looking for an OJT placement — let&apos;s talk.
           </p>
           <p className="max-w-xl text-lg leading-relaxed text-ink-soft">
-            I&apos;m open to internships, freelance work, and collaboration on
-            interesting projects. Reach out through any of the channels
-            below.
+            I&apos;m open to OJT placements in software and web development, and
+            to building systems for businesses and organizations that need one.
+            Reach out through any of the channels below.
           </p>
 
           <div className="flex flex-col gap-3 border-t border-rule pt-8">
-            {socials.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="group flex items-center justify-between rounded-xl px-3 py-3 text-ink transition-colors hover:bg-accent/5 hover:text-accent"
-              >
-                <span className="text-sm text-ink-soft">{social.label}</span>
-                <span className="font-display text-lg font-medium">
-                  {social.value}
-                </span>
-              </a>
-            ))}
+            {socials.map((social) =>
+              social.href ? (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  className="group flex flex-col gap-1 rounded-xl px-3 py-3 text-ink transition-colors hover:bg-accent/5 hover:text-accent sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+                >
+                  <span className="text-sm text-ink-soft">{social.label}</span>
+                  <span className="font-display text-lg font-medium break-all sm:text-right">
+                    {social.value}
+                  </span>
+                </a>
+              ) : (
+                <div
+                  key={social.label}
+                  className="flex flex-col gap-1 px-3 py-3 text-ink sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+                >
+                  <span className="text-sm text-ink-soft">{social.label}</span>
+                  <span className="font-display text-lg font-medium sm:text-right">
+                    {social.value}
+                  </span>
+                </div>
+              ),
+            )}
           </div>
         </div>
       </Reveal>

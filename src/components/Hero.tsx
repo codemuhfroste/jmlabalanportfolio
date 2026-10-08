@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="flex flex-col gap-10">
         <p className="animate-[fade-up_0.6s_ease-out_both] inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
           <Leaf className="h-3.5 w-3.5" />
-          Portfolio — Est. 2026
+          Open to OJT — 2026
         </p>
 
         <h1 className="animate-[fade-up_0.6s_ease-out_0.1s_both] font-display text-5xl leading-[1.05] font-semibold tracking-tight text-ink sm:text-7xl">
@@ -21,10 +21,12 @@ export default function Hero() {
 
         <div className="animate-[fade-up_0.6s_ease-out_0.2s_both] grid gap-10 rounded-3xl border border-rule bg-paper-alt p-8 sm:grid-cols-[2fr_1fr]">
           <p className="max-w-xl text-xl leading-relaxed text-ink-soft">
-            I&apos;m an IT student who enjoys turning ideas into working
-            software. Right now I&apos;m building{" "}
-            <span className="font-medium text-ink">Project Bloom</span> with
-            my team, a venture to help small businesses bloom.
+            IT student building software that real businesses and organizations
+            run on — a{" "}
+            <span className="font-medium text-ink">point-of-sale system</span>{" "}
+            for a store and bakery, a{" "}
+            <span className="font-medium text-ink">dues tracker</span> for a
+            Rotary club. Now looking for an OJT placement.
           </p>
           <div className="flex flex-col gap-2 text-sm text-ink-soft sm:border-l sm:border-rule sm:pl-6">
             <div className="flex justify-between pb-2 sm:justify-start sm:gap-4">
@@ -35,9 +37,13 @@ export default function Hero() {
               <span className="text-ink">School</span>
               <span>Bicol University</span>
             </div>
-            <div className="flex justify-between sm:justify-start sm:gap-4">
+            <div className="flex justify-between pb-2 sm:justify-start sm:gap-4">
               <span className="text-ink">Based in</span>
-              <span>Philippines</span>
+              <span>Legazpi, Albay</span>
+            </div>
+            <div className="flex justify-between sm:justify-start sm:gap-4">
+              <span className="text-ink">Seeking</span>
+              <span>OJT placement</span>
             </div>
           </div>
         </div>

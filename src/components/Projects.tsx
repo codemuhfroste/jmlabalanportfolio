@@ -19,17 +19,18 @@ export default function Projects() {
         </p>
         <div className="mt-8 flex flex-col gap-4">
           <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
-            Selected projects.
+            Systems I&apos;ve delivered to real clients and organizations.
           </p>
-          <p className="max-w-xl text-base leading-relaxed text-ink-soft">
-            Placeholder entries below — swap these for real projects as you
-            finish them.
+          <p className="max-w-2xl text-base leading-relaxed text-ink-soft">
+            Built with AI-assisted development using Claude. My role: gathering
+            requirements from the client, designing the features and workflows,
+            testing, and deployment.
           </p>
 
           <div className="mt-6 flex flex-col gap-10">
             <div>
               <h3 className="mb-4 text-sm font-medium text-ink-soft">
-                Major Projects
+                Systems
               </h3>
               <div className="flex flex-col gap-4">
                 {majorProjects.map((project, i) => (
@@ -42,7 +43,7 @@ export default function Projects() {
 
             <div>
               <h3 className="mb-4 text-sm font-medium text-ink-soft">
-                Minor Projects
+                Websites
               </h3>
               <div className="flex flex-col gap-4">
                 {minorProjects.map((project, i) => (

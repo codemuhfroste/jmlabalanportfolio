@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Education from "@/components/Education";
 import Credentials from "@/components/Credentials";
-import EventParticipation from "@/components/EventParticipation";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -15,8 +15,8 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <Education />
         <Credentials />
-        <EventParticipation />
         <Skills />
         <Projects />
         <Contact />

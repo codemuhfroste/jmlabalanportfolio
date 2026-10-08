@@ -3,20 +3,38 @@ import Reveal from "@/components/Reveal";
 
 const groups = [
   {
-    label: "Languages",
-    items: ["JavaScript", "TypeScript", "Java", "Python", "PHP"],
+    label: "Solution Design",
+    items: [
+      "Requirements gathering",
+      "Feature scoping",
+      "Workflow planning",
+      "User roles & access",
+      "Testing with real users",
+    ],
   },
   {
-    label: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Tailwind CSS", "Laravel"],
+    label: "Development",
+    items: [
+      "AI-assisted full-stack (Claude)",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Flutter",
+    ],
   },
   {
-    label: "Databases",
-    items: ["MySQL", "MongoDB", "PostgreSQL"],
+    label: "Data",
+    items: [
+      "Relational databases",
+      "SQL",
+      "PostgreSQL (Supabase)",
+      "SQLite / libSQL (Turso)",
+      "Migrations",
+    ],
   },
   {
-    label: "Tools & Platforms",
-    items: ["Git", "GitHub", "Figma", "Vercel"],
+    label: "Tools & Deployment",
+    items: ["Git", "GitHub", "Vercel", "VS Code", "Linux"],
   },
 ];
 
@@ -33,7 +51,7 @@ export default function Skills() {
         </p>
         <div className="mt-8 flex flex-col gap-10">
           <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
-            Tools and technologies I work with.
+            How I work, and what I work with.
           </p>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-4">
@@ -55,6 +73,13 @@ export default function Skills() {
               </div>
             ))}
           </div>
+
+          <p className="max-w-2xl border-t border-rule pt-8 text-base leading-relaxed text-ink-soft">
+            I direct builds with Claude, review what comes back, and own the
+            testing and deployment. The architecture decisions — how the data is
+            shaped, who can see what, what happens when the power goes out — are
+            mine to make and defend.
+          </p>
         </div>
       </Reveal>
     </section>

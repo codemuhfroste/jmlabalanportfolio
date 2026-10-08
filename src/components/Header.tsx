@@ -2,10 +2,10 @@ import Leaf from "@/components/icons/Leaf";
 
 const links = [
   { href: "#about", label: "About" },
+  { href: "#education", label: "Education" },
   { href: "#credentials", label: "Credentials" },
-  { href: "#events", label: "Events" },
-  { href: "#work", label: "Work" },
   { href: "#skills", label: "Skills" },
+  { href: "#work", label: "Work" },
   { href: "#contact", label: "Contact" },
 ];
 

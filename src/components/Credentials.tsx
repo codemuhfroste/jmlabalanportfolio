@@ -27,7 +27,7 @@ export default function Credentials() {
       <Reveal className="rounded-3xl border border-rule bg-paper-alt p-8 sm:p-12">
         <p className="inline-flex w-fit items-center gap-2 rounded-full bg-accent/10 px-3.5 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent uppercase">
           <Leaf className="h-3.5 w-3.5" />
-          02 / Credentials
+          03 / Credentials
         </p>
         <div className="mt-8 flex flex-col gap-10">
           <p className="font-display text-3xl leading-snug font-semibold text-ink sm:text-4xl">
@@ -37,7 +37,8 @@ export default function Credentials() {
           <div className="grid grid-cols-1 gap-12 border-t border-rule pt-8 sm:grid-cols-2">
             <div>
               <h3 className="mb-6 text-sm font-medium text-ink-soft">
-                Major — BU CircUITS
+                CircUITS — Circle of Unified Information Technology
+                Students
               </h3>
               <ol className="flex flex-col gap-6 border-l border-rule pl-6">
                 {major.map((item) => (
@@ -56,7 +57,7 @@ export default function Credentials() {
 
             <div>
               <h3 className="mb-6 text-sm font-medium text-ink-soft">
-                Minor — Class Officer
+                Class Officer — BSIT
               </h3>
               <ol className="flex flex-col gap-6 border-l border-rule pl-6">
                 {minor.map((item) => (

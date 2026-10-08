@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Jose Manuel G. Labalan — Portfolio",
   description:
-    "Portfolio of Jose Manuel G. Labalan, 4th year BSIT student at Bicol University.",
+    "Jose Manuel G. Labalan — fourth-year BS Information Technology student at Bicol University, seeking an OJT placement in software and web development. Point-of-sale, dues tracking, and organization management systems delivered to real clients.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
